@@ -58,12 +58,12 @@
 
     | Type                      | TCP b/w (Mbps) | RTT (ms) |
     | ------------------------- | -------------- | -------- |
-    | `t3.medium` - `t3.medium` |                |          |
-    | `m5.large` - `m5.large`   |                |          |
-    | `c5n.large` - `c5n.large` |                |          |
-    | `t3.medium` - `c5n.large` |                |          |
-    | `m5.large` - `c5n.large`  |                |          |
-    | `m5.large` - `t3.medium`  |                |          |
+    | `t3.medium` - `t3.medium` |     245760     |  0.029        |
+    | `m5.large` - `m5.large`   |     299571.2   |  0.022        |
+    | `c5n.large` - `c5n.large` |     332390.4   |  0.021        |
+    | `t3.medium` - `c5n.large` |     21212.8    |  0.764        |
+    | `m5.large` - `c5n.large`  |     24929.28   |  0.689        |
+    | `m5.large` - `t3.medium`  |     40473.28   |  0.244        |
 
     > Region: US East (N. Virginia). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI. Note: Use private IP address when using iPerf within the same region. You'll need iPerf for measuring TCP bandwidth and Ping for measuring Round-Trip time.
 
