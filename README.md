@@ -20,15 +20,22 @@
     > Configuration Explanation:
     > CPU Test:
     > I used the pts/compress-7zip test from Phoronix Test Suite. This test primarily measures the CPU performance through compression tasks. Specifically, it runs the 7zip compression algorithm to evaluate the CPU's capability in handling data compression tasks.
+    > 
     > Command:phoronix-test-suite run pts/compress-7zip
     > Memory Test: For measuring memory performance, I used the pts/ramspeed test from Phoronix Test Suite. This test evaluates the system's memory bandwidth and performance by performing continuous read and write operations on the memory.
+    > 
     > Command: phoronix-test-suite run pts/ramspeed
     > Explanation of Parameters: pts/compress-7zip: This test simulates compression tasks to evaluate the speed and responsiveness of the CPU while performing data compression. By testing the 7zip compression algorithm, it measures the computational power of the system.
     > pts/ramspeed: This test measures memory performance by performing continuous memory read and write operations, reflecting the system's memory bandwidth and responsiveness.
-    > Measurement Results: CPU Performance Results: The results from the pts/compress-7zip test are given in MIPS (Million Instructions Per Second). This value represents the CPU's speed in handling compression tasks. A higher value indicates better CPU performance.
+    >
+    >  Measurement Results: CPU Performance Results: The results from the pts/compress-7zip test are given in MIPS (Million Instructions Per Second). This value represents the CPU's speed in handling compression tasks. A higher value indicates better CPU performance.
+    >
     > Memory Performance Results: The results from the pts/ramspeed test are measured in MB/s (MegaBytes per second). This value indicates the memory bandwidth, i.e., the amount of data that can be read or written per second. Higher bandwidth values indicate better memory performance.
+    >
     > Interpretation of Results: CPU Performance: The results from this test represent the CPU's efficiency in executing compute-intensive tasks like compression. Higher MIPS values indicate faster CPU performance and the ability to handle demanding computational tasks more efficiently.
+    >
     > Memory Performance: Memory performance reflects the system's ability to handle large data sets by providing high memory throughput. Higher memory bandwidth allows faster processing of large amounts of data, making the system suitable for memory-intensive tasks.
+    >
     > Application of Results: These measurement results can be used to estimate the execution time of scientific computing tasks. For instance, systems with higher CPU performance will complete computational tasks faster, and systems with better memory bandwidth can handle larger data sets more efficiently. Therefore, both CPU performance and memory performance directly affect the efficiency of scientific computing and big data processing tasks.
 
 2. (1 mark) Run your measurement tool on general purpose `t2.micro`, `t2.medium`, and `c5d.large` Linux instances, respectively, and find the performance differences among these instances. Launch all the instances in the **US East (N. Virginia)** region. Does the performance of EC2 instances increase commensurate with the increase of the number of vCPUs and memory resource?
