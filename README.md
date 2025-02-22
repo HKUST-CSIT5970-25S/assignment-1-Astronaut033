@@ -86,8 +86,8 @@ m5.large - c5n.large: The TCP bandwidth is 24929.28 Mbps, and the RTT is 0.689 m
 
     | Connection                | TCP b/w (Mbps) | RTT (ms) |
     | ------------------------- | -------------- | -------- |
-    | N. Virginia - Oregon      |                |          |
-    | N. Virginia - N. Virginia |                |          |
-    | Oregon - Oregon           |                |          |
+    | N. Virginia - Oregon      |    4928000     |   61.732 |
+    | N. Virginia - N. Virginia |    388000      |   0.018  |
+    | Oregon - Oregon           |    44560       |   0.157  |
  
     > Region: US East (N. Virginia), US West (Oregon). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI. All instances are `c5.large`. Note: Use public IP address when using iPerf within the same region.
