@@ -66,6 +66,19 @@
     | `m5.large` - `t3.medium`  |     40473.28   |  0.244        |
 
     > Region: US East (N. Virginia). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI. Note: Use private IP address when using iPerf within the same region. You'll need iPerf for measuring TCP bandwidth and Ping for measuring Round-Trip time.
+    >
+    > Performance between instances of the same type (e.g., t3.medium - t3.medium, m5.large - m5.large):
+    >
+    > t3.medium - t3.medium: The TCP bandwidth is 245760 Mbps, and the RTT is 0.029 ms. This shows that communication between instances of the same type is highly efficient, with a high bandwidth and very low RTT.
+    >
+    > m5.large - m5.large: The TCP bandwidth is 299571.2 Mbps, and the RTT is 0.022 ms. The m5.large instances outperform t3.medium in both TCP bandwidth and RTT, indicating better network performance.
+    >
+    > Performance between instances of different types (e.g., t3.medium - c5n.large, m5.large - c5n.large):
+    >
+    > t3.medium - c5n.large: The TCP bandwidth is 21212.8 Mbps, and the RTT is 0.764 ms. This indicates that there is a significant drop in bandwidth, and RTT is much higher when connecting between different types of instances. This is often due to differences in hardware architecture and network connectivity between different instance types.
+m5.large - c5n.large: The TCP bandwidth is 24929.28 Mbps, and the RTT is 0.689 ms. Compared to t3.medium - c5n.large, the bandwidth is higher, and the RTT is slightly lower, but still higher than when connecting instances of the same type.
+    >
+    > Cross-instance communication between t3.medium and m5.large: m5.large - t3.medium: The TCP bandwidth is 40473.28 Mbps, and the RTT is 0.244 ms. Despite the bandwidth difference between the two types, the network performance remains good, especially the RTT, which is significantly lower than the RTT between other cross-instance combinations.
 
 2. (1 mark) What about the network performance for instances deployed in different regions? In order to answer this question, you need to complete the following table.
 
