@@ -16,6 +16,7 @@
 1. (1 mark) Report the name of measurement tool used in your measurements (you are free to choose *any* open source measurement software as long as it can measure CPU and memory performance). Please describe your configuration of the measurement tool, and explain why you set such a value for each parameter. Explain what the values obtained from measurement results represent (e.g., the value of your measurement result can be the execution time for a scientific computing task, a score given by the measurement tools or something else).
 
     > In my measurements, I used Phoronix Test Suite as the measurement tool. Phoronix Test Suite is an open-source benchmarking tool widely used to measure the performance of various system components, including CPU, memory, disk, etc. I selected two specific tests to measure CPU performance and memory performance.
+    >
     > Configuration Explanation:
     > CPU Test:
     > I used the pts/compress-7zip test from Phoronix Test Suite. This test primarily measures the CPU performance through compression tasks. Specifically, it runs the 7zip compression algorithm to evaluate the CPU's capability in handling data compression tasks.
