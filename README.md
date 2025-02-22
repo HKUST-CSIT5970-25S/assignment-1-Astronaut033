@@ -79,6 +79,8 @@
 m5.large - c5n.large: The TCP bandwidth is 24929.28 Mbps, and the RTT is 0.689 ms. Compared to t3.medium - c5n.large, the bandwidth is higher, and the RTT is slightly lower, but still higher than when connecting instances of the same type.
     >
     > Cross-instance communication between t3.medium and m5.large: m5.large - t3.medium: The TCP bandwidth is 40473.28 Mbps, and the RTT is 0.244 ms. Despite the bandwidth difference between the two types, the network performance remains good, especially the RTT, which is significantly lower than the RTT between other cross-instance combinations.
+    >
+    > From the results, it is clear that network performance is better between instances of the same type, especially in terms of TCP bandwidth and RTT. As you move to connecting instances of different types, there is a noticeable decline in network performance, particularly in RTT, which is much higher between different types of instances. Therefore, performance is indeed affected by instance type differences, with same-type instances generally offering better performance than different-type instances.
 
 2. (1 mark) What about the network performance for instances deployed in different regions? In order to answer this question, you need to complete the following table.
 
