@@ -49,6 +49,7 @@
     | `c5d.large` |    7431 MIPS    |    13714.99 MB/s   |
 
     > Region: US East (N. Virginia). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI.
+    > Yes, the performance of EC2 instances does improve with increasing number of vCPUs and memory resources. From the measured results, the performance of t2.micro, t2.medium and c5d.large show a significant improvement trend with the increase of vCPU number and memory capacity. Although both t2.medium and c5d.large are equipped with 2 vCPUs, the CPU and memory performance of c5d.large greatly exceeds that of t2.medium due to the optimisation of its processor and hardware architecture. Furthermore, the increase in memory performance and CPU performance proves that the overall performance of the system has been significantly improved with the stronger hardware configuration. Therefore, it can be concluded that the performance of the EC2 instance is proportional to the increase in the number of vCPUs and memory resources.
 
 ## Question 2: Measure the EC2 Network performance
 
