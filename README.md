@@ -5,9 +5,9 @@
 
 ---
 
-### Name: 
-### Student Id: 
-### Email: 
+### Name: GUO Yilin
+### Student Id: 21072202
+### Email: yguocr@connect.ust.hk
 
 ---
 
@@ -23,9 +23,9 @@
 
     | Size        | CPU performance | Memory performance |
     | ----------- | --------------- | ------------------ |
-    | `t2.micro` |                 |                    |
-    | `t2.medium`  |                 |                    |
-    | `c5d.large` |                 |                    |
+    | `t2.micro`  |   3614 MIPS     |   10828.01 MB/s    |
+    | `t2.medium` |   3649 MIPS     |   10843.26 MB/s    |
+    | `c5d.large` |   7431 MIPS     |   13714.99 MB/s    |
 
     > Region: US East (N. Virginia). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI.
 
