@@ -21,7 +21,7 @@
     > CPU Test:
     > I used the pts/compress-7zip test from Phoronix Test Suite. This test primarily measures the CPU performance through compression tasks. Specifically, it runs the 7zip compression algorithm to evaluate the CPU's capability in handling data compression tasks.
     > 
-    > Command:phoronix-test-suite run pts/compress-7zip
+    > Command: phoronix-test-suite run pts/compress-7zip
     > Memory Test: For measuring memory performance, I used the pts/ramspeed test from Phoronix Test Suite. This test evaluates the system's memory bandwidth and performance by performing continuous read and write operations on the memory.
     > 
     > Command: phoronix-test-suite run pts/ramspeed
